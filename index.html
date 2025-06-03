@@ -1,11 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audiomack</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+			integrity="sha512-yFVi2Qw0vN6f+bv3ADAKyD94W6zQMRd4D/EMQqLMzX9x2zPZ64i7Tskd6cb7R1ZrGzENZ+xyN17OLIBmPIJxWw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Audiomack</title>
+	</head>
+	<body>
+		<main>
+			<div class="top-container">
+				<!-- Dropdown icon -->
+				<div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#ffffff"
+					>
+						<path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+					</svg>
+				</div>
+				<div class="top-container-title">
+					<p class="title">FROM THE ALBUM</p>
+					<h4 class="title">Vision 2022 EP</h4>
+				</div>
+				<!-- hamburger menu -->
+				<div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#FFFFFF"
+					>
+						<path
+							d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+						/>
+					</svg>
+				</div>
+			</div>
+			<div class="music-poster">
+				<img src="artist.jpg" alt="Music Poster" />
+			</div>
+			<!-- music info -->
+			<div class="music-info">
+				<p class="artist-name">Emteey Shmurda</p>
+				<h2 class="album-name">Nawa</h2>
+			</div>
+			<div class="music-icon-row">
+				<!-- Like -->
+				<div class="music-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#FFFFFF"
+					>
+						<path
+							d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"
+						/>
+					</svg>
+					<span>Like</span>
+				</div>
+				<!-- playlist -->
+				<div class="music-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#FFFFFF"
+					>
+						<path
+							d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h360v80H200v560h560v-360h80v360q0 33-23.5 56.5T760-120H200Zm120-160v-80h320v80H320Zm0-120v-80h320v80H320Zm0-120v-80h320v80H320Zm360-80v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"
+						/>
+					</svg>
+					<span>Playlist</span>
+				</div>
+				<!-- Mod -->
+				<div class="music-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#FFFFFF"
+					>
+						<path
+							d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680v400Zm0 140 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"
+						/>
+					</svg>
+					<span>Mod</span>
+				</div>
+				<!-- Download -->
+				<div class="music-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#ffa200"
+					>
+						<path
+							d="M382-320 155-547l57-57 170 170 366-366 57 57-423 423ZM200-160v-80h560v80H200Z"
+						/>
+					</svg>
+					<span>Download</span>
+				</div>
+				<!-- share -->
+				<div class="music-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#FFFFFF"
+					>
+						<path
+							d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"
+						/>
+					</svg>
+					<span>Share</span>
+				</div>
+			</div>
+			<div class="music-progress-bar">
+				<!-- music bars -->
+				<div class="music-bars">
+					<div class="music-bar low"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar high"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar low"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar medium"></div>
+					<div class="music-bar high gray-bar"></div>
+					<div class="music-bar high gray-bar"></div>
+					<div class="music-bar high gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar high gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar high gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar high gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar high gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar medium gray-bar"></div>
+					<div class="music-bar medium gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar medium gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+					<div class="music-bar medium gray-bar"></div>
+					<div class="music-bar low gray-bar"></div>
+				</div>
+				<div class="music-duration">
+					<p id="duration-left">2:45</p>
+					<p id="duration-right">3:32</p>
+				</div>
+			</div>
+			<!-- music controls -->
+			<div class="music-controls">
+				<!-- ellipsis -->
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="34px"
+					viewBox="0 -960 960 960"
+					width="34px"
+					fill="#FFFFFF"
+				>
+					<path
+						d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+					/>
+				</svg>
+				<!-- previous -->
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="54px"
+					viewBox="0 -960 960 960"
+					width="54px"
+					fill="#FFFFFF"
+				>
+					<path
+						d="M220-240v-480h80v480h-80Zm520 0L380-480l360-240v480Zm-80-240Zm0 90v-180l-136 90 136 90Z"
+					/>
+				</svg>
+				<!-- play -->
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="84px"
+					viewBox="0 -960 960 960"
+					width="84px"
+					fill="#FFFFFF"
+                    id="play-icon"
+				>
+					<path
+						d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"
+					/>
+				</svg>
+				<!-- next -->
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="54px"
+					viewBox="0 -960 960 960"
+					width="54px"
+					fill="#FFFFFF"
+				>
+					<path
+						d="M660-240v-480h80v480h-80Zm-440 0v-480l360 240-360 240Zm80-240Zm0 90 136-90-136-90v180Z"
+					/>
+				</svg>
+				<!-- shuffle -->
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="34px"
+					viewBox="0 -960 960 960"
+					width="34px"
+					fill="#FFFFFF"
+				>
+					<path
+						d="M560-160v-80h104L537-367l57-57 126 126v-102h80v240H560Zm-344 0-56-56 504-504H560v-80h240v240h-80v-104L216-160Zm151-377L160-744l56-56 207 207-56 56Z"
+					/>
+				</svg>
+			</div>
+			<!-- Uploaded by section and avatar -->
+			<div class="artist-profile">
+				<div class="profile-header">
+					<h4>Uploaded By</h4>
+					<h4>VIEW PROFILE</h4>
+				</div>
+				<div class="profile-avatar">
+					<div class="avatar-left-content">
+						<img src="artist.jpg" alt="Artist Avatar" />
+						<div class="profile-info">
+							<h4>Emteey Shmurda</h4>
+							<p>234,535 <span>followers</span></p>
+						</div>
+					</div>
+					<button type="button">Follow</button>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
